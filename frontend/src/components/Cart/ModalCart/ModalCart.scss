@@ -1,0 +1,28 @@
+.modal-cart {
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    color: #4b515d;
+    font-weight: 500;
+  }
+
+  &__total-amount {
+    color: #ffa000;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .modal-cart {
+
+    &__footer {
+      flex-direction: row;
+      justify-content: space-between !important;
+    }
+
+  }
+
+}

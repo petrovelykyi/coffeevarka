@@ -1,0 +1,44 @@
+.equipment-item {
+  width: 100%;
+  box-shadow: 0 1px 5px 0 #aaaaaa;
+  color: #4b515d;
+  font-weight: 500;
+
+  &__img {
+    height: 240px;
+    object-fit: cover;
+    object-position: 50% 80%;
+  }
+
+  &__producer-name {
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 576px) {
+  .equipment-item {
+    width: calc(100% / 2 - 16px);
+
+    &__img {
+      height: 280px;
+      object-position: 50% 70%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+  .equipment-item {
+    width: calc(100% / 3 - 16px);
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+
+

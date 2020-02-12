@@ -1,0 +1,27 @@
+.footer {
+  background-color: #191919;
+  font-weight: 500;
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__icon-wrapper {
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+  }
+
+  &__social {
+    display: flex;
+  }
+
+}
+
+.footer a:hover {
+  color: #ffa000;
+}
+
+.footer a.active {
+  color: #ffa000 !important;
+}

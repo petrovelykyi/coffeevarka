@@ -1,0 +1,10 @@
+Тип:type;Виробник:producer;Використовувана кава:coffee_type;Спосіб встановлення:installation;Оснащення:equipment
+кавоварка автоматична;Bosch:Німеччині:/static/images/equipment/bosch.jpg;зерна;настільна;млин:mill
+ріжкова кавоварка еспресо;Delonghi:Італії:/static/images/equipment/delonghi.png;мелена;вбудована;регулювання ступеня помелу:grinding_degree
+крапельна кавоварка;Gaggia:Італії:/static/images/equipment/gaggia.jpg;капсули;;функція cappuccino:cappuccino
+капсульна кавоварка еспресо;Krups:Німеччині:/static/images/equipment/krups.jpg;чалди;;дісплей:display
+;Melitta:США:/static/images/equipment/melitta.jpg;;;система самоочищення:cleaning
+;Nivona:Німеччині:/static/images/equipment/nivona.jpg;;;
+;Philips:Нідерландах:/static/images/equipment/philips.jpeg;;;
+;Saeco:Італії:/static/images/equipment/saeco.jpg;;;
+;Siemens:Німеччині:/static/images/equipment/siemens.jpg;;;

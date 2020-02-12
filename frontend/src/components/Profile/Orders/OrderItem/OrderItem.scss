@@ -1,0 +1,19 @@
+.order_item {
+
+  &__text {
+    font-size: 14px;
+    color: #4b515d;
+    background-color: aliceblue;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__sum_wrapper {
+    white-space: nowrap;
+  }
+
+}

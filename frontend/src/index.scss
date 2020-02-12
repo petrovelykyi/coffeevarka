@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// MDBootstrap bug
+.fadeElement {
+  display: block;
+}
+
+.md-form.md-outline.form-sm label {
+  transform: translateY(6px);
+}
+
+.md-form.md-outline label.active {
+  transform: translateY(-12px) scale(0.8);
+}
+
+//.md-form.md-outline label {
+//  transform: translateY(6px);
+//}

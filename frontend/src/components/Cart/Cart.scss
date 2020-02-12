@@ -1,0 +1,38 @@
+.cart {
+  &__bg {
+    background-color: #F6F2EE;
+    min-height: calc(100vh - 56px);
+    padding: 16px 0;
+  }
+
+  &__make-order {
+    text-align: center;
+  }
+
+  &__name {
+    color: #4b515d;
+    font-weight: 500;
+  }
+
+  &__value {
+    color: #4b515d;
+    font-weight: 700;
+  }
+
+  &__disabled-link {
+    pointer-events: none;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .cart {
+    &__bg {
+      min-height: calc(100vh - 176px);
+    }
+
+    &__make-order {
+      text-align: right ;
+    }
+  }
+}

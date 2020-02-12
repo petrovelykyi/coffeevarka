@@ -1,0 +1,71 @@
+.filter {
+  &__item-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    cursor: pointer;
+  }
+
+  &__item-header:hover {
+    color: #0b51c5;
+  }
+
+  &__item-header:hover &__item-chevron {
+    fill: #0b51c5;
+  }
+
+  &__item-name {
+    font-size: 14px;
+  }
+
+  &__item-chevron {
+    width: 14px;
+    height: 14px;
+    fill: #4b515d;
+  }
+
+  &__item-chevron:hover {
+    fill: #0b51c5;
+  }
+
+  &__item-body {
+    overflow: hidden;
+    max-height: 600px;
+    transition: max-height .6s cubic-bezier(.1, 0, 1, 0);
+  }
+
+  &__item-body.collapsed {
+    max-height: 0;
+    transition: max-height .6s cubic-bezier(0, 1, 0, 1);
+  }
+
+  &__item-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b515d;
+    padding-left: 2px !important;
+    //cursor: pointer;
+  }
+
+  &__item-label>.form-check-label:hover {
+    color: #0b51c5;
+  }
+
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: lightgrey;
+}
+
+.form-check-label {
+  line-height: 16px !important;
+  padding-top: 4px;
+  padding-left: 28px !important;
+}
+
+// MDBootstrap bug!!!
+.form-check-input {
+  height: 20px;
+}

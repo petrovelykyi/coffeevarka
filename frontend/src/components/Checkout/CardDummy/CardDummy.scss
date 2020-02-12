@@ -1,0 +1,110 @@
+.card-dummy {
+
+  &__card {
+    position: relative;
+    width: 300px;
+    height: 188px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  }
+
+  &__front-image{
+    background: url("../../../images/card-logos/card-bg.png") no-repeat center center;
+    background-size: cover;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  &__back-image{
+    background: #1C5FC3;
+    margin-left: 0;
+  }
+
+  &__chip-set {
+    width: 36px;
+  }
+
+  &__input {
+    font-family: "Oxygen Mono", Oxygen-Sans, serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+    color: white;
+    background-color: transparent;
+    border: none;
+
+    &--number {
+      width: 232px;
+    }
+
+    &--expiry {
+      width: 64px;
+    }
+
+    &--cvv {
+      width: 44px;
+      color: #191919;
+      text-shadow: none;
+    }
+
+    &--cvv::placeholder {
+      color: #191919 !important;
+    }
+  }
+
+  &__input::placeholder {
+    color: white;
+  }
+
+  &__valid {
+    width: 32px;
+    font-size: 8px;
+    line-height: 8px;
+    margin-right: 4px;
+  }
+
+  &__producer {
+    position: absolute;
+    max-height: 48px;
+    max-width: 64px;
+    right: 8px;
+    bottom: -26px;
+  }
+
+  &__black-stripe {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    height: 42px;
+    background-color: #121212;
+  }
+
+  &__white-stripe {
+    width: 210px;
+    height: 36px;
+    background-color: antiquewhite;
+    margin-top: 60px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .card-dummy {
+
+    &__bg {
+      min-height: calc(100vh - 176px);
+    }
+
+    &__front-image{
+      margin-right: 8px;
+      margin-bottom: 0;
+    }
+
+    &__back-image{
+      margin-left: 8px;
+    }
+  }
+}

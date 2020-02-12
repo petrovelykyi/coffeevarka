@@ -1,0 +1,25 @@
+.filters-wrapper {
+  overflow-y: scroll;
+  max-height: calc(100vh - 132px);
+  padding: 8px;
+}
+
+.filters-wrapper::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+.filters-wrapper::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5;
+}
+
+.filters-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ffe082;
+}
+
+@media (min-width: 768px) {
+  .filters-wrapper {
+    max-height: calc(100vh - 266px);
+  }
+}

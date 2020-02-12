@@ -1,0 +1,54 @@
+.mdb-dropdown-item:hover {
+  background-color: #ffc107!important;
+}
+
+.products-list {
+
+  &__select-sort {
+    font-family: "Montserrat", sans-serif;
+    appearance: none;
+    height: 22px;
+    font-weight: 500;
+    color: #4b515d;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0 8px;
+  }
+
+  &__select-sort:hover {
+    color: #0b51c5;
+  }
+
+  &__select-sort:active {
+    padding: 0 8px;
+  }
+
+  &__select-sort-option {
+    font-weight: 500;
+  }
+
+  &__list-wrapper {
+    padding: 8px 8px 0;
+  }
+
+}
+
+.pagination {
+
+  &__arrow,
+  &__page {
+    margin: 0 2px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__arrow:hover {
+    background-color: grey !important;
+  }
+
+  &__page:hover {
+    background-color: #ffa000 !important;
+  }
+
+}

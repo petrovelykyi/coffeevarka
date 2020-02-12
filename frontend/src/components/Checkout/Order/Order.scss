@@ -1,0 +1,18 @@
+.order {
+
+  &__text {
+    color: #4b515d;
+  }
+
+  &__note {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+
+  &__sum-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0;
+  }
+
+}

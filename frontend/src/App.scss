@@ -1,0 +1,43 @@
+.flyout {
+  display:flex;
+  flex-direction: column;
+  min-height:100vh;
+  justify-content: space-between;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+.app {
+  &__bg {
+    background-color: #F6F2EE;
+    min-height: calc(100vh - 56px);
+  }
+
+  &__loading {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+// MDBootstrap
+.dropdown-content {
+  max-height: 9rem;
+}
+
+@media (min-width: 576px) {
+  .app {
+    &__bg {
+      min-height: calc(100vh - 176px);
+    }
+
+  }
+}

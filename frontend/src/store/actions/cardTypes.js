@@ -1,0 +1,1 @@
+export const SET_CARD_FIELDS = 'SET_CARD_FIELDS';

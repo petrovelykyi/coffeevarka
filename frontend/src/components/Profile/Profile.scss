@@ -1,0 +1,42 @@
+.profile {
+
+  &__bg {
+    background-color: #F6F2EE;
+    min-height: calc(100vh - 56px);
+    padding: 16px 0;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__spinner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .profile {
+
+    &__btn-wrapper {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .profile {
+
+    &__bg {
+      min-height: calc(100vh - 176px);
+    }
+
+  }
+}

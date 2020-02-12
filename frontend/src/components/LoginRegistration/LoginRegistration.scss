@@ -1,0 +1,73 @@
+.log-reg {
+
+  &__nav {
+    background-color: dodgerblue;
+    margin: -30px 8px 0;
+  }
+
+  &__nav-link {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    background-color: transparent !important;
+
+    &--log {
+      margin-right: 6px;
+    }
+
+    &--reg {
+      margin-left: 6px;
+    }
+  }
+
+  &__nav-link > i {
+    margin-top: 2px;
+  }
+
+  &__nav-link:hover {
+    background-color: rgba(0,0,0,.2) !important;
+  }
+
+  &__nav-link.actual {
+    background-color: rgba(0,0,0,.2) !important;
+  }
+
+  &__text-styling {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color .15s ease-in-out;
+  }
+
+  &__text-styling:hover {
+    color: dodgerblue;
+    cursor: pointer;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+  }
+
+  &__spiner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .log-reg {
+
+    &__btn-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+  }
+}

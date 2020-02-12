@@ -1,0 +1,23 @@
+.shipment {
+
+  &__article {
+    border-top: 1px solid lightgrey;
+  }
+
+  &__title-img {
+    width: 100%;
+  }
+
+  &__article-img {
+    width: 100px;
+  }
+
+
+}
+
+@media (min-width: 576px) {
+  .shipment {
+
+
+  }
+}

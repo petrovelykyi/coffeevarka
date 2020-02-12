@@ -1,0 +1,19 @@
+const mongoose = require('mongoose');
+
+const { Schema } = mongoose;
+
+const CategorySchema = Schema({
+  name: String,
+  imgUrl: String,
+});
+
+CategorySchema.virtual('products', {
+  ref: 'Product',
+  localField: '_id',
+  foreignField: 'category',
+  justOne: false,
+  options: { sort: { name: 1 }, limit: 0 },
+});
+
+
+module.exports = mongoose.model('Category', CategorySchema);

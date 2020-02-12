@@ -1,0 +1,25 @@
+.payment {
+
+  &__bg {
+    background-color: #F6F2EE;
+    min-height: calc(100vh - 56px);
+    padding: 16px 0;
+  }
+
+  &__sum-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .card-dummy {
+
+    &__bg {
+      min-height: calc(100vh - 176px);
+    }
+
+  }
+}

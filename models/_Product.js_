@@ -1,0 +1,41 @@
+const mongoose = require('mongoose');
+const AutoIncrement = require('mongoose-sequence')(mongoose);
+
+const { Schema } = mongoose;
+
+const ProductSchema = Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  category: {
+    type: Schema.Types.ObjectId,
+    ref: 'Category',
+  },
+  itemNum: {
+    type: Number,
+  },
+  brand: {
+    type: String,
+  },
+  currentPrice: {
+    type: Number,
+  },
+  quantity: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  productUrl: {
+    type: String,
+  },
+  imageUrls: [
+    {
+      type: String,
+    },
+  ],
+});
+
+ProductSchema.plugin(AutoIncrement, { inc_field: 'itemNum', collection_name: 'products_seq', start_seq: 100001 });
+
+module.exports = mongoose.model('Product', ProductSchema);
